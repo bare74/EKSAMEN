@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Advent Pro;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #27594a;
+  font-size: 15px;
+}
+
+h1 {
+  color: #153633;
+  font-size: 25px;
+}
+
+h2 {
+  color: #27594a;
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 40px;
+  color: #27594a;
+}
+
+.main_header {
+  display: flex;
+  background-color: aqua;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
