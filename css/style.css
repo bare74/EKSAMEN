@@ -6,36 +6,109 @@
 html,
 body {
   font-family: Advent Pro;
-  font-size: 15px;
-  font-weight: bold;
-  width: 100%;
-  height: 100%;
 }
 
+a,
+h1,
+h2,
+h3 {
+  color: #336699;
+}
 a {
-  color: #27594a;
   font-size: 15px;
 }
 
 h1 {
-  color: #153633;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 h2 {
-  color: #27594a;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 40px;
-  color: #27594a;
+  font-size: 20px;
 }
 
 .main_header {
   display: flex;
-  background-color: aqua;
-  position: -webkit-sticky;
-  position: sticky;
+  justify-content: space-around;
+  background-color: white;
+  position: fixed;
   top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+ul {
+  margin-top: 15px;
+}
+li {
+  padding-left: 11px;
+  display: inline-block;
+}
+
+.link_header::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: blue;
+  transition: width 0.3s;
+}
+
+.link_header:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+@media (max-width: 805px) {
+  .main_header {
+    text-align: center;
+    flex-direction: column;
+    height: 150px;
+  }
+  .main_header img,
+  .container_show img {
+    display: none;
+    margin: auto;
+  }
+}
+
+.wrapper {
+  margin-top: auto;
+  background-image: url(../img/fish_background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.container_show {
+  width: 100%;
+  background: white;
+  height: auto;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+}
+
+.headline_text {
+  margin-bottom: 20px;
+  font-size: 60px;
+  width: auto;
+}
+
+@media (max-width: 685px) {
+  .main_header img {
+    display: none;
+  }
 }
