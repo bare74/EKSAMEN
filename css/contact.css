@@ -57,3 +57,10 @@ input[type="submit"]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+@media (max-width: 544px), (max-width: 832px){
+  main {
+   margin-top: 150px;
+
+  }
+}

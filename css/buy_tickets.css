@@ -12,3 +12,9 @@ video{
     width: 70%;
     z-index: 1;
 }
+@media (max-width: 544px), (max-width: 832px){
+  main {
+   margin-top: 150px;
+
+  }
+}
