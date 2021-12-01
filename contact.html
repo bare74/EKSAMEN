@@ -33,7 +33,7 @@
             </li>
             <li>
               <a href="./buy_tickets.html" class="link_header"
-                ><h3>Billetter</h3></a
+                ><h3>Kjøp billetter</h3></a
               >
             </li>
             <li>
@@ -45,7 +45,49 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="contact_form">
+        <div class="form">
+          <h2>Kontakt Skjema</h2>
+          <div class="container">
+            <!--HUSK LINK TIL ACTION SITE-->
+            <form action="#">
+              <label for="fname">Fornavn</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Skriv inn ditt fornavn.."
+              />
+
+              <label for="lname">Etternavn</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Skriv inn ditt etternavn.."
+              />
+
+              <label for="country">Land</label>
+              <select id="country" name="country">
+                <option value="australia">Norge</option>
+                <option value="canada">Sverige</option>
+                <option value="usa">Danmark</option>
+              </select>
+
+              <label for="subject">Emne</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Skriv her.."
+              ></textarea>
+
+              <p><button class="button">Send inn</button></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="bottom">
         <div class="logo">
@@ -55,9 +97,9 @@
           />
         </div>
         <div class="menu">
-          <li><a href="#">FORSIDE</a></li>
-          <li><a href="#">Billetter</a></li>
-          <li><a href="#">Kontakt oss</a></li>
+          <li><a href="./index.html">FORSIDE</a></li>
+          <li><a href="./buy_tickets.html">Billetter</a></li>
+          <li><a href="./contact.html">Kontakt oss</a></li>
         </div>
         <div class="menu">
           <li><a href="#">SELSKAP</a></li>
@@ -66,14 +108,26 @@
         </div>
         <div class="menu">
           <li><a href="#">OM OSS</a></li>
-          <a href="#"><li>Teamet vårt</li></a>
-          <a href="#"><li>Historie</li></a>
+          <li>
+            <a href="#"><li>Teamet vårt</li></a>
+          </li>
+          <li>
+            <a href="#"><li>Historie</li></a>
+          </li>
         </div>
         <div class="menu">
-          <a href="#"><li>FINN OSS</li></a>
-          <a href="#"><li>Facebook</li></a>
-          <a href="#"><li>Twitter</li></a>
-          <a href="#"><li>Instagram</li></a>
+          <li>
+            <a href="#"><li>FINN OSS</li></a>
+          </li>
+          <li>
+            <a href="#"><li>Facebook</li></a>
+          </li>
+          <li>
+            <a href="#"><li>Twitter</li></a>
+          </li>
+          <li>
+            <a href="#"><li>Instagram</li></a>
+          </li>
         </div>
       </div>
     </footer>
