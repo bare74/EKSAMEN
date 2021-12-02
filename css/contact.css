@@ -9,12 +9,15 @@ input,
 textarea {
   font-family: Advent Pro;
   color: #336699;
+  font-size: 20px;
 }
+
 .contact_form {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
+  margin-bottom: 50px;
 }
 
 .form {
@@ -22,8 +25,8 @@ textarea {
   height: 600px;
 }
 
-.form h2{
-    margin-bottom: 15px;
+.form h2 {
+  margin-bottom: 15px;
 }
 
 input[type="text"],
@@ -53,14 +56,43 @@ input[type="submit"]:hover {
 }
 
 .container {
+  width: 100%;
+  height: auto;
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 30px;
+}
+.contact_img {
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width: 544px), (max-width: 832px){
+.contact_img img {
+  margin-top: 100px;
+  border-radius: 50%;
+  width: 70%;
+}
+@media (max-width: 544px), (max-width: 832px) {
   main {
-   margin-top: 150px;
+    margin-top: 150px;
+  }
+  .container {
+    width: 70%;
+    margin-left: 20px;
+  }
+}
 
+@media (min-width: 1024px) {
+  .contact_form {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin: 150px;
+  }
+}
+@media (max-width: 1024px) {
+  .contact_img {
+    display: none;
+    margin: 0;
   }
 }

@@ -2,19 +2,48 @@ main {
   margin-top: 50px;
 }
 
+.background_img {
+  margin-top: 50px;
+  background-image: url(../img/aquarium.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
 
-.tickets {
-    margin-top: 120px;
+.header_text {
+  margin-top: 20px;
   text-align: center;
 }
 
-video{
-    width: 70%;
-    z-index: 1;
+.ticket_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  margin: 50px;
+  padding: 20px;
 }
-@media (max-width: 544px), (max-width: 832px){
-  main {
-   margin-top: 150px;
 
+.ticket_container > .box-1 {
+  background-color: yellow;
+  grid-column: 1/4;
+}
+
+.ticket_container > .box-2 {
+  background-color: green;
+}
+
+.ticket_container > .box-3 {
+  background-color: BLUE;
+}
+
+.ticket_container > .box-4 {
+  background-color: wheat;
+}
+@media (max-width: 544px), (max-width: 832px) {
+  main {
+    margin-top: 150px;
   }
 }

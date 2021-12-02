@@ -15,8 +15,8 @@ h3 {
   color: #336699;
 }
 a {
-  font-size: 15px;
-  font-weight: bolder;
+  font-size: 20px;
+  font-weight:bolder;
 }
 
 h1 {
@@ -82,6 +82,22 @@ h3 {
   .container_show img {
     display: none;
     margin: auto;
+  }
+}
+
+@media (max-width: 544px) {
+  .logo {
+    display: none;
+    margin: auto;
+  }
+  .menu a {
+    font-size: 10px;
+  }
+  .navigation li {
+    padding-left: 10px;
+  }
+  .link_header h3 {
+    font-size: 15px;
   }
 }
 
@@ -165,7 +181,7 @@ h2 {
   transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
-/*Kode insperert fra Codepen.io ved eriksenlezama*/
+/* END */
 
 .box img {
   padding: 30px;
@@ -180,20 +196,23 @@ h2 {
   text-align: center;
 }
 
-.gallary a {
-  font-size: 16px;
-}
-.img2 {
+.gallary_img1,
+.gallary_img2,
+.gallary_img3,
+.gallary_img4 {
   position: static;
   width: 240px;
   margin-top: 50px;
   border: 1px #336699 solid;
   margin-left: 20px;
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
-.img2 img {
+.gallary_img1 img,
+.gallary_img2 img,
+.gallary_img3 img,
+.gallary_img4 img {
   width: 100%;
   height: 40%;
 }
@@ -217,7 +236,6 @@ h2 {
 .menu li,
 .logo p,
 .menu a {
-  font-size: 16px;
   color: #336699;
   list-style-type: none;
   text-decoration: none;
@@ -231,22 +249,6 @@ h2 {
   height: 200px;
 }
 
-@media (max-width: 544px) {
-  .logo {
-    display: none;
-    margin: auto;
-  }
-  .menu a {
-    font-size: 10px;
-  }
-  .navigation li {
-    padding-left: 10px;
-  }
-  .link_header h3 {
-    font-size: 15px;
-  }
-}
-
 .button {
   margin-top: 50px;
   border: none;
@@ -258,6 +260,7 @@ h2 {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .button:hover {
