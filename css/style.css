@@ -141,36 +141,33 @@ h2 {
 /*Rullende ball frem og tilbake*/
 .animation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .animation img {
-  width: 120px;
+  width: 7em;
 }
 
 .ball {
-  width: 200px;
   position: absolute;
-  top: 70%;
-  left: 39%;
-
-  height: 100%;
   animation-name: rollingball;
   animation: rollingball 5s infinite;
 }
 .ball img {
-  width: 80px;
+  width: 50px;
 }
 
 @keyframes rollingball {
   0% {
-    left: 0px;
+    left: 34%;
   }
   50% {
-    left: 430px;
+    left: 62.5%;
   }
   100% {
-    left: 0px;
+    left: 34%;
   }
 }
 
