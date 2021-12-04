@@ -13,37 +13,90 @@ main {
 }
 
 .header_text {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
 }
 
 .ticket_container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: repeat(2, auto);
-  gap: 30px;
-  margin: 50px;
-  padding: 20px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.ticket_container > .box-1 {
-  background-color: yellow;
-  grid-column: 1/4;
+.ticket {
+  background-image: url(../img/ticket1.png);
+  background-size: 100% 100%;
+  padding: 4rem;
+  margin: 20px 20px;
+  text-align: center;
+  width: 400px;
+  letter-spacing: 1px;
 }
 
-.ticket_container > .box-2 {
-  background-color: green;
+.button2 {
+  border: none;
+  color: white;
+  background-color: #336699;
+  text-align: center;
+  cursor: pointer;
+  min-width: 70%;
+  height: 40px;
 }
 
-.ticket_container > .box-3 {
-  background-color: BLUE;
+.button2 h3,
+.counter h3 {
+  color: white;
 }
 
-.ticket_container > .box-4 {
-  background-color: wheat;
+.count h3 {
+  color: #336699;
 }
-@media (max-width: 544px), (max-width: 832px) {
-  main {
-    margin-top: 150px;
+
+.button2:hover,
+.btn:hover {
+  background-color: #334466;
+}
+
+.ticket_button {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 25px;
+  margin-right: 10px;
+}
+
+.main_counter {
+  display: flex;
+  align-items: center;
+}
+.counter {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  gap: 10px;
+}
+.btn {
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #336699;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*footer er på bunnen i 4K
+@media (min-width: 902px) {
+  .bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;
   }
+
 }
+*/

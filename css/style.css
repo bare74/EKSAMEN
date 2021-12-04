@@ -1,20 +1,26 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
-body {
+body,
+button {
   font-family: Advent Pro;
+  width: 100%;
+  height: 100%;
 }
 
 a,
+p,
 h1,
 h2,
 h3 {
   color: #336699;
 }
-a {
+a,
+p {
   font-size: 20px;
   font-weight: bolder;
 }
@@ -50,6 +56,7 @@ h3 {
 .navigation ul {
   margin-top: 15px;
 }
+
 .navigation li {
   padding-left: 50px;
   display: inline-block;
@@ -69,6 +76,7 @@ h3 {
   transition: width 0.3s;
 }
 
+/*Fjerner logo og tilpasser siden*/
 @media (max-width: 832px) {
   .main_header {
     text-align: center;
@@ -85,6 +93,7 @@ h3 {
   }
 }
 
+/*Fjerner logo og tilpasser siden*/
 @media (max-width: 544px) {
   .logo {
     display: none;
@@ -108,7 +117,7 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 280px;
   width: 100%;
 }
 
@@ -117,31 +126,35 @@ h3 {
   width: 100%;
   background: white;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .container_show h1 {
-  padding: 20px;
+  padding: 2rem;
 }
 
-.container_show h2 {
-  margin-bottom: 30px;
-}
 .container_show h1,
 h2 {
   text-align: center;
 }
 
+/*Rullende ball frem og tilbake*/
 .animation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .animation img {
-  width: 180px;
+  width: 120px;
 }
 
 .ball {
+  width: 200px;
   position: absolute;
+  top: 70%;
+  left: 39%;
+
+  height: 100%;
   animation-name: rollingball;
   animation: rollingball 5s infinite;
 }
@@ -151,13 +164,13 @@ h2 {
 
 @keyframes rollingball {
   0% {
-    left: 493px;
+    left: 0px;
   }
   50% {
-    left: 870px;
+    left: 430px;
   }
   100% {
-    left: 493px;
+    left: 0px;
   }
 }
 
@@ -166,22 +179,25 @@ h2 {
   width: auto;
   z-index: -1;
 }
+
 .box {
   display: flex;
   justify-content: center;
   transform-style: preserve-3d;
 }
+
 .box img {
   transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
   box-shadow: -80px 60px 15px 5px rgba(0, 0, 0, 0.4);
   transition: all 0.4s;
   transform-style: preserve-3d;
 }
+
 .box:hover img {
   transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
-/* END */
+/* SLUTT */
 
 .box img {
   padding: 30px;
@@ -193,14 +209,12 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
 }
 
 .gallary_img1,
 .gallary_img2,
 .gallary_img3,
 .gallary_img4 {
-  position: static;
   width: 240px;
   margin-top: 50px;
   border: 1px #336699 solid;
@@ -221,7 +235,28 @@ h2 {
   padding: 10px;
 }
 
+.button {
+  margin-top: 30px;
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: #336699;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.button h3 {
+  color: white;
+}
+
+.button:hover {
+  background-color: #334466;
+}
+
 .bottom {
+  background-color: white;
   display: flex;
   justify-content: center;
   border-top: 1px #336699 solid;
@@ -247,22 +282,4 @@ h2 {
 
 .logo img {
   height: 200px;
-}
-
-.button {
-  margin-top: 50px;
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #336699;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.button:hover {
-  background-color: lightskyblue;
 }
