@@ -110,7 +110,7 @@ h3 {
     font-size: 15px;
   }
 }
-
+/*Bakgrunnsbilde med parallax*/
 .wrapper {
   margin-top: auto;
   background-image: url(../img/fish_background.jpg);
@@ -142,7 +142,7 @@ h2 {
 }
 
 .animation img {
-  width: 7em;
+  width: 8em;
 }
 
 .ball {
@@ -156,18 +156,17 @@ h2 {
 
 @keyframes rollingball {
   0% {
-    left: 34%;
+    left: 35%;
   }
   50% {
-    left: 62.5%;
+    left: 61%;
   }
   100% {
-    left: 34%;
+    left: 35%;
   }
 }
 
 /*Kode insperert fra Codepen.io ved eriksenlezama*/
-
 .box_gallary {
   display: flex;
   justify-content: center;
@@ -332,10 +331,7 @@ h2 {
   margin-bottom: 80px;
 }
 
-.gallary_img1 img,
-.gallary_img2 img,
-.gallary_img3 img,
-.gallary_img4 img {
+.gg img {
   width: 100%;
   height: 40%;
 }
