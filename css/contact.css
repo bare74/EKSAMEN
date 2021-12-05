@@ -61,11 +61,13 @@ input[type="submit"]:hover {
   z-index: -2;
 }
 
+/*Kontaktskjema og bilde endres ut i fra skjermstr*/
 @media (max-width: 544px), (max-width: 832px) {
   main {
     margin-top: 150px;
   }
   .container {
+    width: 250px;
     margin: 20px;
     padding: 30px;
   }
@@ -137,14 +139,12 @@ input[type="submit"]:hover {
   }
 }
 
-/*footer er på bunnen 
-@media (min-width: 290px) {
+/*footer er på bunnen stor skjerm*/
+@media (min-width: 1441px) {
   .bottom {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 15rem;
   }
-
 }
-*/
