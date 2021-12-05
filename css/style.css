@@ -19,6 +19,7 @@ h2,
 h3 {
   color: #336699;
 }
+
 a,
 p {
   font-size: 20px;
@@ -198,7 +199,7 @@ h2 {
 }
 .gallary {
   margin: 20px;
-  padding: 0;
+  margin-bottom: 40px;
   text-align: center;
 }
 .container {
@@ -316,6 +317,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
+  margin: 20px 20px;
 }
 
 .gallary_img1,
