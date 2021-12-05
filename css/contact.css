@@ -11,7 +11,7 @@ textarea {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  gap: 50px;
+  justify-content: space-around;
 }
 
 h2 {
@@ -81,7 +81,6 @@ input[type="submit"]:hover {
 
 /*Inspirert av Codepen.io ved Mark*/
 .bubble {
-  color: white;
   display: flex;
   background-color: #336699;
   padding: 20px;
@@ -96,7 +95,8 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-.bubble a {
+.bubble a,
+.bubble h3 {
   color: white;
 }
 .bubble:before,

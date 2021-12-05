@@ -229,7 +229,7 @@ h2 {
   transition: 0.5s ease-in-out;
 }
 
-.text h3{
+.text h3 {
   color: white;
 }
 
@@ -315,7 +315,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .gallary_img1,
