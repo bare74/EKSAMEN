@@ -137,12 +137,3 @@ input[type="submit"]:hover {
   }
 }
 
-/*footer er på bunnen stor skjerm*/
-@media (min-width: 1441px) {
-  .bottom {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 15rem;
-  }
-}
