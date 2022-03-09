@@ -2,7 +2,7 @@ main {
   margin-top: 50px;
 }
 
-/*
+
 .background_img {
   margin-top: 50px;
   background-image: url(../img/aquarium.jpg);
@@ -12,10 +12,10 @@ main {
   background-size: cover;
   height: 350px;
 }
-*/
 
 
-/*added video*/
+
+/*added video
 video{
   width: 100%;
   height: 50%;
@@ -27,7 +27,7 @@ video{
 object-fit: contain;
 height: 50%;
 }
-/*added video*/
+*/
 
 .header_text {
   margin-top: 50px;
