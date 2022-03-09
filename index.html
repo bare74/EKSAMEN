@@ -1,25 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-KTEQ2NXYGM"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-KTEQ2NXYGM");
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Sandefjord Akvarium sin hjemmeside" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/buy_tickets.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Advent Pro"
@@ -29,7 +16,7 @@
       type="image/x-icon"
       href="./img/Sandefjord Akvarium.png"
     />
-    <title>The fish paradise | Sandefjord Akvarium</title>
+    <title>The fish paradise | Kjøp Billetter</title>
   </head>
   <body>
     <header>
@@ -59,146 +46,67 @@
       </div>
     </header>
     <main>
-      <!--Bakgrunnsbilde med parallax-->
-      <div class="wrapper"></div>
-
-      <!--Fokus på sjøløveshow-->
-      <div class="container_show">
-        <h1>Åpent hver dag kl. 10-18</h1>
-        <h2>Nyhet! Kom å se det spektakulære sjøløve showet vårt!</h2>
-
-        <!--Animert ball-->
-        <div class="animation">
-          <img src="./img/sea_lion.png" alt="A image of sea lion" />
-          <div class="ball">
-            <img src="./img/basketball.png" alt="A image of basketball" />
-          </div>
-          <img src="./img/sea_lion-flipped.png" alt="A image of sea lion" />
-        </div>
-        <div class="box_gallary">
-          <img src="./img/sealion1.jpg" alt="A image of sea lion" />
-          <img src="./img/sealion.jpg" alt="A image of sea lion" />
-          <img src="./img/sealion3.jpg" alt="A image of sea lion" />
-        </div>
+      <!--Billett og info om priser-->
+      <div class="background_img"></div>
+      <div class="header_text">
+        <h1>Kjøp billetter og Sesongkort</h1>
       </div>
-      <div class="wrapper"></div>
-
-      <!--Bildegalleri fisker-->
-      <div class="gallary">
-        <h1>VÅRE FISKER</h1>
-        <div class="container">
-          <div class="gallery-container img1 gc1">
-            <div class="gallery-item">
-              <div class="image">
-                <img src="./img/Calyx_Doctor_Fish.jpg" alt="Doctor fish" />
+      <div class="ticket_container">
+        <div class="ticket">
+          <h3>Barnebillett 49,-</h3>
+          <div class="ticket_button">
+            <button class="button"><h3>Kjøp</h3></button>
+            <div class="”main_counter”">
+              <div class="counter">
+                <div class="btn"><h3>+</h3></div>
+                <div class="count"><h3>2</h3></div>
+                <div class="btn"><h3>-</h3></div>
               </div>
-              <div class="text"><h3>DOCTOR FISH</h3></div>
             </div>
           </div>
-          <div class="gallery-container img1 gc2">
-            <div class="gallery-item">
-              <div class="image">
-                <img src="./img/Kampfisk.jpg" alt="Siamese fish" />
+        </div>
+        <div class="ticket">
+          <h3>Ungdomsbillett 79,-</h3>
+          <div class="ticket_button">
+            <button class="button"><h3>Kjøp</h3></button>
+            <div class="”main_counter”">
+              <div class="counter">
+                <div class="btn"><h3>+</h3></div>
+                <div class="count"><h3>2</h3></div>
+                <div class="btn"><h3>-</h3></div>
               </div>
-              <div class="text"><h3>SIAMESE FISH</h3></div>
             </div>
           </div>
-          <div class="gallery-container gc1">
-            <div class="gallery-item">
-              <div class="image">
-                <img src="./img/discus-fish.jpg" alt="Discus fish" />
+        </div>
+        <div class="ticket">
+          <h3>Voksenbillett 99,-</h3>
+          <div class="ticket_button">
+            <button class="button"><h3>Kjøp</h3></button>
+            <div class="”main_counter”">
+              <div class="counter">
+                <div class="btn"><h3>+</h3></div>
+                <div class="count"><h3>2</h3></div>
+                <div class="btn"><h3>-</h3></div>
               </div>
-              <div class="text"><h3>DISCUS FISH</h3></div>
             </div>
           </div>
-          <div class="gallery-container img2">
-            <div class="gallery-item">
-              <div class="image">
-                <img src="./img/angelfishes.jpg" alt="Angel fish" />
+        </div>
+        <div class="ticket">
+          <h3>Sesongkort for hele familien 999,-</h3>
+          <div class="ticket_button">
+            <button class="button"><h3>Kjøp</h3></button>
+            <div class="”main_counter”">
+              <div class="counter">
+                <div class="btn"><h3>+</h3></div>
+                <div class="count"><h3>2</h3></div>
+                <div class="btn"><h3>-</h3></div>
               </div>
-              <div class="text"><h3>ANGEL FISH</h3></div>
-            </div>
-          </div>
-          <div class="gallery-container img3 gc3">
-            <div class="gallery-item">
-              <div class="image">
-                <img src="./img/goldfish.jpg" alt="Goldfish" />
-              </div>
-              <div class="text"><h3>GOLDFISH</h3></div>
-            </div>
-          </div>
-          <div class="gallery-container">
-            <div class="gallery-item">
-              <div class="image">
-                <img src="./img/puffer-fish.jpg" alt="Puffer fish" />
-              </div>
-              <div class="text"><h3>PUFFER FISH</h3></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="wrapper"></div>
-
-      <!--Bildegalleri med info-->
-      <div class="gallary2">
-        <div class="gallary_img1 gg">
-          <img src="./img/angelfishes.jpg" alt="A image of a Angelfish " />
-          <div class="info_img">
-            <h2>ANGEL FISH</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur ipsum iste possimus fuga. Voluptate, mollitia
-            </p>
-            <a href="https://en.wikipedia.org/wiki/Pterophyllum"
-              ><button class="button"><h3>Mer info</h3></button></a
-            >
-          </div>
-        </div>
-        <div class="gallary_img2 gg">
-          <img src="./img/discus-fish.jpg" alt="A image of a Discus Fish " />
-          <div class="info_img">
-            <h2>DISCUS FISH</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur ipsum iste possimus fuga. Voluptate, mollitia
-            </p>
-            <a href="https://en.wikipedia.org/wiki/Discus_(fish)"
-              ><button class="button"><h3>Mer info</h3></button></a
-            >
-          </div>
-        </div>
-        <div class="gallary_img3 gg">
-          <img src="./img/Kampfisk.jpg" alt="A image of a fish " />
-          <div class="info_img">
-            <h2>SIAMESE FISH</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur ipsum iste possimus fuga. Voluptate, mollitia
-            </p>
-            <a href="https://en.wikipedia.org/wiki/Siamese_fighting_fish"
-              ><button class="button"><h3>Mer info</h3></button></a
-            >
-          </div>
-        </div>
-        <div class="gallary_img4 gg">
-          <img
-            src="./img/Calyx_Doctor_Fish.jpg"
-            alt="Image of Calyx doctor fish "
-          />
-          <div class="info_img">
-            <h2>DOCTOR FISH</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur ipsum iste possimus fuga. Voluptate, mollitia
-            </p>
-            <button class="button"><h3>Mer info</h3></button>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper"></div>
+      <div class="background_img"></div>
     </main>
-
-    <!--Legger ikke inn linker annet en som beskrevet i oppgaven-->
     <footer>
       <div class="bottom">
         <div class="logo">
